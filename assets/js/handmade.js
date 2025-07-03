@@ -1,135 +1,135 @@
-// ハンドメイド商品データ（実際の画像が準備できるまでのサンプル）
+// ハンドメイド商品データ（森・自然テーマ）
 const products = [
   {
     id: 1,
-    name: "シルバーリング",
+    name: "森の輝きシルバーリング",
     price: "¥3,500",
     priceNum: 3500,
     category: "accessories",
     materials: ["シルバー925"],
     image: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=300&h=300&fit=crop",
-    description: "手作りのシルバーリング。シンプルで上品なデザインです。",
-    materialsText: "シルバー925",
+    description: "森の木漏れ日をイメージした手作りシルバーリング。自然の曲線美を表現したシンプルで上品なデザインです。",
+    materialsText: "シルバー925（リサイクルシルバー使用）",
     size: "フリーサイズ（調整可能）"
   },
   {
     id: 2,
-    name: "レザートートバッグ",
+    name: "大地の恵みレザートートバッグ",
     price: "¥12,000",
     priceNum: 12000,
     category: "bags",
-    materials: ["レザー"],
+    materials: ["天然レザー"],
     image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=300&fit=crop",
-    description: "上質なレザーを使用したハンドメイドトートバッグ。日常使いに最適です。",
-    materialsText: "本革（牛革）",
+    description: "植物性タンニンで丁寧に鞣した天然レザーを使用したエコなハンドメイドトートバッグ。使うほどに味わい深く変化します。",
+    materialsText: "植物性タンニン鞣しレザー（牛革）",
     size: "W35cm × H30cm × D10cm"
   },
   {
     id: 3,
-    name: "陶器フラワーベース",
+    name: "森の恵み陶器フラワーベース",
     price: "¥4,800",
     priceNum: 4800,
     category: "interior",
-    materials: ["陶器"],
+    materials: ["天然陶器"],
     image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=300&h=300&fit=crop",
-    description: "手びねりで作った温かみのある陶器の花瓶です。",
-    materialsText: "陶器",
+    description: "地元の土を使って手びねりで作った温かみのある陶器の花瓶。自然の不規則性が美しい一点もの。",
+    materialsText: "地元産天然粘土、無鉛釉薬",
     size: "高さ18cm × 直径12cm"
   },
   {
     id: 4,
-    name: "パールピアス",
+    name: "海の贈り物パールピアス",
     price: "¥2,800",
     priceNum: 2800,
     category: "accessories",
-    materials: ["パール", "14kgf"],
+    materials: ["天然パール", "14kgf"],
     image: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=300&h=300&fit=crop",
-    description: "上品なパールを使用したエレガントなピアスです。",
-    materialsText: "淡水パール、14kgf",
+    description: "海の恵みである天然パールを使用したエレガントなピアス。自然が作り出した美しい輝きをお楽しみください。",
+    materialsText: "天然淡水パール、14kゴールドフィルド",
     size: "パール直径6mm"
   },
   {
     id: 5,
-    name: "ウォールアート",
+    name: "季節の移ろいウォールアート",
     price: "¥8,500",
     priceNum: 8500,
     category: "art",
-    materials: ["アクリル", "キャンバス"],
+    materials: ["天然顔料", "キャンバス"],
     image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=300&h=300&fit=crop",
-    description: "抽象的なデザインのオリジナルウォールアート。お部屋のアクセントに。",
-    materialsText: "アクリル絵具、キャンバス",
+    description: "四季の森からインスピレーションを得たオリジナルウォールアート。天然顔料を使用した環境にやさしい作品です。",
+    materialsText: "天然顔料、オーガニックキャンバス",
     size: "30cm × 30cm"
   },
   {
     id: 6,
-    name: "木製小物入れ",
+    name: "森の宝箱木製小物入れ",
     price: "¥3,200",
     priceNum: 3200,
     category: "interior",
-    materials: ["木材"],
+    materials: ["天然木材"],
     image: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=300&h=300&fit=crop",
-    description: "天然木を使用した手作りの小物入れ。温かみのある仕上がりです。",
-    materialsText: "天然木（ウォールナット）",
+    description: "持続可能な森林から調達した天然木を使用した手作りの小物入れ。木の温もりと自然の香りが心を癒します。",
+    materialsText: "FSC認証ウォールナット材",
     size: "15cm × 10cm × 5cm"
   }
 ];
 
-// お客様の声データ
+// お客様の声データ（自然テーマ）
 const testimonials = [
   {
     id: 1,
     name: "田中 美咲",
     rating: "★★★★★",
-    text: "とても繊細で美しい作品でした。プレゼントとして購入しましたが、とても喜んでもらえました。作家さんの温かい人柄が作品にも表れていて素敵です。",
+    text: "森の香りがするような、とても自然で美しい作品でした。プレゼントとして購入しましたが、受け取った方からも「自然の温もりを感じる」と大変喜んでもらえました。作家さんの自然への愛情が作品にも表れていて素敵です。",
     avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b9c7?w=50&h=50&fit=crop&crop=face"
   },
   {
     id: 2,
     name: "佐藤 健太",
     rating: "★★★★★",
-    text: "注文から発送まで丁寧に対応していただき、商品も期待以上でした。手作りの温かみが感じられる逸品です。また購入したいと思います。",
+    text: "環境に配慮した素材選びから丁寧な制作まで、すべてにこだわりを感じました。商品も期待以上で、手作りの温かみと自然の美しさが感じられる逸品です。また購入したいと思います。",
     avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=50&h=50&fit=crop&crop=face"
   },
   {
     id: 3,
     name: "山田 花子",
     rating: "★★★★★",
-    text: "一点一点丁寧に作られているのが伝わってきます。デザインもとてもオシャレで、友人からも「どこで買ったの？」と聞かれることが多いです。",
+    text: "自然の素材を活かした一点一点丁寧に作られた作品に感動しました。デザインもとても洗練されていて、森の中にいるような癒しを感じます。友人からも「どこの森で見つけたの？」と聞かれるほどです。",
     avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=50&h=50&fit=crop&crop=face"
   }
 ];
 
-// 制作工程データ
+// 制作工程データ（自然テーマ）
 const processSteps = [
   {
     number: 1,
-    title: "デザイン設計",
-    description: "お客様のご要望をヒアリングし、オリジナルデザインを作成いたします。"
+    title: "🌿 自然からのインスピレーション",
+    description: "森の散歩や季節の変化から着想を得て、お客様のご要望と自然の美しさを融合したオリジナルデザインを作成いたします。"
   },
   {
     number: 2,
-    title: "素材選定",
-    description: "厳選した高品質な素材を選び、作品に最適な材料を用意いたします。"
+    title: "🌱 持続可能な素材選定",
+    description: "環境に配慮した天然素材を厳選し、地球にやさしい方法で調達された高品質な材料を用意いたします。"
   },
   {
     number: 3,
-    title: "丁寧な制作",
-    description: "一つ一つ手作業で、時間をかけて丁寧に制作いたします。"
+    title: "🌳 自然のリズムで丁寧な制作",
+    description: "急がず慌てず、自然のリズムに合わせて一つ一つ手作業で、時間をかけて丁寧に制作いたします。"
   },
   {
     number: 4,
-    title: "品質チェック",
-    description: "完成した作品は品質チェックを行い、お客様にお届けいたします。"
+    title: "🌸 愛情込めた最終仕上げ",
+    description: "完成した作品は自然の恵みへの感謝を込めて品質チェックを行い、心を込めてお客様にお届けいたします。"
   }
 ];
 
-// カテゴリー情報
+// カテゴリー情報（自然テーマ）
 const categories = {
-  all: "すべて",
-  accessories: "アクセサリー",
-  bags: "バッグ・小物",
-  interior: "インテリア",
-  art: "アート"
+  all: "🌍 すべて",
+  accessories: "🌿 ナチュラルアクセサリー",
+  bags: "🍃 エコバッグ・小物",
+  interior: "🌳 自然インテリア",
+  art: "🌸 ネイチャーアート"
 };
 
 // グローバル状態管理
