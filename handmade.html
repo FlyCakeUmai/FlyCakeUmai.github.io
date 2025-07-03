@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ハンドメイド商品 - FlyCakeUmai</title>
+  <link rel="stylesheet" href="assets/ccs/style.css">
+  <link rel="stylesheet" href="assets/ccs/handmade.css">
+</head>
+<body>
+  <header>
+    <h1>ハンドメイド商品</h1>
+    <p>心を込めて作ったオリジナル作品をご紹介します。</p>
+  </header>
+  
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="about.html">About</a> |
+    <a href="handmade.html">Handmade</a> |
+    <a href="contact.html">Contact</a>
+  </nav>
+  
+  <main>
+    <!-- アーティストプロフィール -->
+    <section class="artist-profile">
+      <img src="https://images.unsplash.com/photo-1494790108755-2616b612b9c7?w=120&h=120&fit=crop&crop=face" 
+           alt="FlyCakeUmai" class="artist-avatar">
+      <h2 class="artist-name">FlyCakeUmai</h2>
+      <div class="artist-title">ハンドメイドアーティスト</div>
+      <p class="artist-description">
+        バイクと手工芸を愛する作家として、一つ一つ丁寧に心を込めた作品を制作しています。
+        素材にこだわり、お客様の日常に小さな幸せをお届けできるよう努めております。
+      </p>
+      <div class="brand-signature">Handcrafted with Love ✦ FlyCakeUmai</div>
+    </section>
+
+    <!-- 検索・ソート・ビュー切り替え -->
+    <section>
+      <div class="search-sort-container">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" 
+                 id="searchInput" 
+                 class="search-input" 
+                 placeholder="商品名、素材で検索...">
+          <button id="clearSearch" class="clear-search" style="display: none;">×</button>
+        </div>
+        
+        <div class="sort-container">
+          <label for="sortSelect">並び替え:</label>
+          <select id="sortSelect" class="sort-select">
+            <option value="name">名前順</option>
+            <option value="price-low">価格: 安い順</option>
+            <option value="price-high">価格: 高い順</option>
+            <option value="category">カテゴリー順</option>
+          </select>
+        </div>
+        
+        <div class="view-toggle">
+          <button class="view-btn active" data-view="grid" title="グリッド表示">⊞</button>
+          <button class="view-btn" data-view="list" title="リスト表示">☰</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 高度フィルター -->
+    <section>
+      <div class="advanced-filters">
+        <div class="filter-group">
+          <h4>💰 価格範囲</h4>
+          <div class="price-range">
+            <input type="number" id="priceMin" class="price-input" placeholder="最低価格" min="0" value="0">
+            <span>〜</span>
+            <input type="number" id="priceMax" class="price-input" placeholder="最高価格" min="0" value="20000">
+            <span>円</span>
+          </div>
+        </div>
+        
+        <div class="filter-group">
+          <h4>🎨 素材</h4>
+          <div class="material-filters">
+            <button class="material-tag" data-material="シルバー">シルバー</button>
+            <button class="material-tag" data-material="レザー">レザー</button>
+            <button class="material-tag" data-material="陶器">陶器</button>
+            <button class="material-tag" data-material="パール">パール</button>
+            <button class="material-tag" data-material="木材">木材</button>
+            <button class="material-tag" data-material="アクリル">アクリル</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- カテゴリーフィルター -->
+    <section>
+      <h2>カテゴリー</h2>
+      <div id="filterContainer" class="filter-container">
+        <!-- JavaScriptで動的生成 -->
+      </div>
+    </section>
+
+    <!-- 最近見た商品 -->
+    <section class="recently-viewed" id="recentlyViewedSection" style="display: none;">
+      <h3>👁️ 最近見た商品</h3>
+      <div id="recentlyViewedGrid" class="recently-viewed-grid">
+        <!-- JavaScriptで動的生成 -->
+      </div>
+    </section>
+
+    <!-- 作品ギャラリー -->
+    <section>
+      <h2>作品ギャラリー</h2>
+      <div id="productGallery" class="product-gallery">
+        <!-- JavaScriptで動的生成 -->
+      </div>
+    </section>
+
+    <!-- 制作工程 -->
+    <section class="process-section">
+      <h2>制作工程</h2>
+      <p style="text-align: center; margin-bottom: 2rem; color: #666;">
+        品質にこだわった丁寧な手作業工程をご紹介します
+      </p>
+      <div id="processSteps" class="process-steps">
+        <!-- JavaScriptで動的生成 -->
+      </div>
+    </section>
+
+    <!-- お客様の声 -->
+    <section class="testimonials">
+      <h2>お客様の声</h2>
+      <p style="text-align: center; color: #666;">
+        作品をお手に取っていただいたお客様からの嬉しいお声をご紹介します
+      </p>
+      <div id="testimonialsGrid" class="testimonial-grid">
+        <!-- JavaScriptで動的生成 -->
+      </div>
+    </section>
+    
+    <!-- オーダー情報 -->
+    <section>
+      <h2>オーダーについて</h2>
+      <p>オリジナル作品のご注文も承ります。商品をクリックして詳細をご覧いただき、お気軽にお問い合わせください。</p>
+      <ul>
+        <li>✨ オーダーメイド対応</li>
+        <li>🎁 ギフト包装可能</li>
+        <li>🚚 全国配送対応</li>
+        <li>🎨 カスタマイズ相談可</li>
+      </ul>
+      <p><a href="contact.html">お問い合わせはこちら →</a></p>
+    </section>
+
+    <!-- SNSセクション -->
+    <section class="social-section">
+      <h2>Follow Me</h2>
+      <p>最新作品情報や制作過程をSNSでシェアしています</p>
+      <div class="social-links">
+        <a href="#" class="social-link" onclick="openSocialLink('instagram')">
+          <span class="social-icon">📸</span>
+          Instagram
+        </a>
+        <a href="#" class="social-link" onclick="openSocialLink('twitter')">
+          <span class="social-icon">🐦</span>
+          Twitter
+        </a>
+        <a href="#" class="social-link" onclick="openSocialLink('pinterest')">
+          <span class="social-icon">📌</span>
+          Pinterest
+        </a>
+      </div>
+      <div class="brand-signature" style="color: rgba(212, 175, 55, 0.8);">
+        Creating Beautiful Things ✦ One Piece at a Time
+      </div>
+    </section>
+  </main>
+
+  <!-- カートアイコン -->
+  <button id="cartIcon" class="cart-icon">
+    🛒
+    <span id="cartCount" class="cart-count" style="display: none;">0</span>
+  </button>
+
+  <!-- カートサイドバー -->
+  <div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+      <h3>🛒 カート</h3>
+      <button id="cartClose" class="cart-close">×</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <!-- JavaScriptで動的生成 -->
+    </div>
+    <div class="cart-footer">
+      <div id="cartTotal" class="cart-total">合計: ¥0</div>
+      <button id="cartCheckout" class="cart-checkout">注文手続きへ</button>
+    </div>
+  </div>
+
+  <!-- 商品比較バー -->
+  <div id="compareBar" class="compare-bar">
+    <div id="compareItems" class="compare-items">
+      <!-- JavaScriptで動的生成 -->
+    </div>
+    <button class="compare-btn" onclick="showComparison()">比較する</button>
+  </div>
+
+  <!-- モーダルウィンドウ -->
+  <div id="productModal" class="modal">
+    <!-- JavaScriptで動的生成 -->
+  </div>
+
+  <!-- 画像ズームオーバーレイ -->
+  <div id="imageZoomOverlay" class="image-zoom-overlay">
+    <img class="image-zoom-content" src="" alt="">
+  </div>
+
+  <script src="assets/js/handmade.js"></script>
+
+  <footer>
+    © 2025 FlyCakeUmai
+  </footer>
+</body>
+</html> 
