@@ -45,3 +45,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+/* 追加するスタイル（#foxContainer img） */
+#foxContainer img {
+  display: block;
+  margin: 1em auto;
+}
